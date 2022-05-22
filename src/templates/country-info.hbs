@@ -1,0 +1,12 @@
+{{#each this}}
+  <div class="country-info__container">
+    <div class="country-info__wrapper">
+      <img class="country-info__flags" src={{flags.svg}} alt={{name.official}} width="50"/>
+      <h2 class="country-info__name">{{name.common}}</h2>
+    </div>
+    <p class="country-info__title">Capital: <span class="country-info__text">{{capital}}</span> </p>
+    <p class="country-info__title">Population: <span class="country-info__text">{{population}}</span> </p>
+    <p class="country-info__title">Languages: {{#each languages}}<span class="country-info__text">{{this}}</span>{{/each}}</p>
+  </div>
+{{/each}}
+
